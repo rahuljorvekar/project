@@ -1,0 +1,9 @@
+{
+	"name": "dfearthquakegpt",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "7f64c076-3ca0-4374-8bfb-07d40e459444",
+		"tenantId": "f9a318c8-9bb0-4655-8fdd-cc4467fbb864"
+	}
+}
