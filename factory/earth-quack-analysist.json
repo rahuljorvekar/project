@@ -1,0 +1,9 @@
+{
+	"name": "earth-quack-analysist",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "cb17b612-64c7-4037-97e6-b3c65c4039ce",
+		"tenantId": "f9a318c8-9bb0-4655-8fdd-cc4467fbb864"
+	}
+}
