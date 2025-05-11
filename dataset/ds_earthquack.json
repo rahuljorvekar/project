@@ -1,0 +1,26 @@
+{
+	"name": "ds_earthquack",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "earthquack_data_@{formatDateTime(utcNow(),'yyyyDDmm')}.json",
+					"type": "Expression"
+				},
+				"folderPath": {
+					"value": "@{formatDateTime(addDays(utcNow(),-1),'yyyyMMdd')}",
+					"type": "Expression"
+				},
+				"fileSystem": "bronze-layer"
+			}
+		},
+		"schema": {}
+	}
+}
